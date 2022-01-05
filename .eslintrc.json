@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "ignorePatterns": ["node_modules", "lib", "env"],
+  "rules": {
+    "indent": ["error", 2, { "MemberExpression": 1 }],
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 1 }]
+  }
+}

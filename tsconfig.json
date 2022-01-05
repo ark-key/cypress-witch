@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "types": ["cypress"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
