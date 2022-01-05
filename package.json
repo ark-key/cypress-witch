@@ -1,6 +1,6 @@
 {
   "name": "cypress-witch",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A different way to write tests with Cypress",
   "author": "ark-key",
   "license": "MIT",
