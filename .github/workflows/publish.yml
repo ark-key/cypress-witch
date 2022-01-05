@@ -22,8 +22,11 @@ jobs:
         run: npm run build
       - name: Release
         run: npx semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish-to-gpr:
+    needs: [semantic-release]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
