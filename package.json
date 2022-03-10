@@ -4,7 +4,6 @@
   "description": "A different way to write tests with Cypress",
   "author": "ark-key",
   "license": "MIT",
-  "private": "true",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
