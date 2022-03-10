@@ -1,17 +1,15 @@
 {
   "name": "cypress-witch",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "A different way to write tests with Cypress",
   "author": "ark-key",
   "license": "MIT",
+  "private": "true",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ark-key/cypress-witch"
@@ -25,7 +23,6 @@
     "cypress": ">=8.0.0"
   },
   "devDependencies": {
-    "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "cypress": "^9.2.0",
@@ -33,20 +30,5 @@
     "eslint-config-prettier": "^8.3.0",
     "semantic-release": "^18.0.1",
     "typescript": "^4.5.4"
-  },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
-    "@semantic-release/github",
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "package.json"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
-  ]
+  }
 }
