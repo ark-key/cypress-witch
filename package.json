@@ -16,7 +16,6 @@
   },
   "homepage": "https://github.com/ark-key/cypress-witch#readme",
   "scripts": {
-    "lint": "eslint src",
     "build": "tsc"
   },
   "peerDependencies": {
