@@ -6,7 +6,7 @@
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "types": ["cypress"]
+    "types": ["cypress", "node"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]
