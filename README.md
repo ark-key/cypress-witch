@@ -51,6 +51,18 @@ testCase('User adds and edits new todo', {
 });
 ```
 
+**_plugins/index.js_**
+
+```javascript
+import { plugins } from 'cypress-witch/lib/plugins';
+
+module.exports = (on, config) => {
+  on('task', {
+    ...plugins,
+  })
+}
+```
+
 **cypress run**
 
 ![cypress run](https://user-images.githubusercontent.com/76620843/158082711-602b0653-0859-4c5e-a348-5af9ceaeddee.png)
