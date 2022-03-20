@@ -7,6 +7,28 @@
   </a>
 </p>
 
+**cypress-witch** makes your Cypress tests concise, structured and readable.
+
+## Installation
+
+```shell
+npm i cypress-witch
+```
+
+In your *cypress/plugins/index.js* :
+
+```javascript
+import { plugins } from 'cypress-witch/lib/plugins';
+
+module.exports = (on, config) => {
+  on('task', {
+    ...plugins,
+  })
+}
+```
+
+## Showcase
+
 **_todo.spec.js_**
 
 ```javascript
@@ -49,18 +71,6 @@ testCase('User adds and edits new todo', {
     });
   },
 });
-```
-
-**_plugins/index.js_**
-
-```javascript
-import { plugins } from 'cypress-witch/lib/plugins';
-
-module.exports = (on, config) => {
-  on('task', {
-    ...plugins,
-  })
-}
 ```
 
 **cypress run**
