@@ -27,7 +27,7 @@ module.exports = (on, config) => {
 }
 ```
 
-## Showcase 
+## Showcase
 
 **_todo.spec.js_**
 
