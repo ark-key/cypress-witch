@@ -4,16 +4,8 @@
   "description": "A different way to write tests with Cypress",
   "author": "ark-key",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "default": "./lib/index.js",
-      "types": "./lib/index.d.ts"
-    },
-    "./plugins": {
-      "default": "./lib/plugins.js",
-      "types": "./lib/plugins.d.ts"
-    }
-  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
