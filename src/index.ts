@@ -8,17 +8,17 @@ export const testCase = (
   })
 }
 
-export const precondition = (msg: string, precondition: () => void, consoleLog = true) => {
-  consoleLog && cy.task('log_precondition', `  Precondition ${msg}`, { log: false })
+export const precondition = (msg: string, precondition: () => void) => {
+  cy.task('cypress_witch_log_precondition', `  Precondition ${msg}`, { log: false })
   precondition()
 }
 
-export const step = (msg: string, step: () => void, consoleLog = true) => {
-  consoleLog && cy.task('log_step', `  Step ${msg}`, { log: false })
+export const step = (msg: string, step: () => void) => {
+  cy.task('cypress_witch_log_step', `  Step ${msg}`, { log: false })
   step()
 }
 
-export const expectedResult = (msg: string, expectedResult: () => void, consoleLog = true) => {
-  consoleLog && cy.task('log_expected_result', `  Expected Result: ${msg}`, { log: false })
+export const expectedResult = (msg: string, expectedResult: () => void) => {
+  cy.task('cypress_witch_log_expected_result', `  Expected Result: ${msg}`, { log: false })
   expectedResult()
 }
