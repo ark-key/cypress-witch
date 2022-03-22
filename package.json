@@ -9,7 +9,10 @@
       "default": "./lib/index.js",
       "types": "./lib/index.d.ts"
     },
-    "./plugins": "./lib/plugins.js"
+    "./plugins": {
+      "default": "./lib/plugins.js",
+      "types": "./lib/plugins.d.ts"
+    }
   },
   "files": [
     "lib/**/*"
@@ -33,7 +36,7 @@
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "semantic-release": "^18.0.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.7.0-dev.20220322"
   },
   "release": {
     "plugins": [
