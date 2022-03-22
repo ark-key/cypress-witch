@@ -44,6 +44,10 @@
             {
               "type": "refactor",
               "release": "patch"
+            },
+            {
+              "type": "build",
+              "release": "patch"
             }
           ]
         }
