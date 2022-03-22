@@ -5,10 +5,12 @@
   "author": "ark-key",
   "license": "MIT",
   "exports": {
-    ".": "./lib/index.js",
+    ".": {
+      "default": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
     "./plugins": "./lib/plugins.js"
   },
-  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
