@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">cypress-witch</h1>
-<p align="center"><i>A different way to write tests with Cypress</i></p>
+<p align="center"><i>A different way to test with Cypress</i></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/cypress-witch">
@@ -7,7 +7,7 @@
   </a>
 </p>
 
-**cypress-witch** makes your Cypress tests concise, structured and readable.
+**cypress-witch** is a test case automation library for Cypress. It makes your Cypress tests concise, structured and readable.
 
 ## Installation
 
