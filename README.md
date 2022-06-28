@@ -9,6 +9,14 @@
 
 **cypress-witch** is a test case automation library for Cypress. It makes your Cypress tests concise, structured and readable.
 
+## Features
+
+- test structure becomes identical to test case definition
+- test structure becomes readable and understandable by anyone
+- enhanced logging makes failing tests review blazing fast 
+- can be easily integrated into existing workflow or code base
+- easily extendable
+
 ## Installation
 
 ```shell
@@ -27,7 +35,16 @@ module.exports = (on, config) => {
 }
 ```
 
-## Showcase
+## Usage
+
+With **cypress-witch** test is defined with [testCase](https://github.com/ark-key/cypress-witch/blob/master/src/index.ts#L1) and consists of [precondition](https://github.com/ark-key/cypress-witch/blob/master/src/index.ts#L11)(s), [step](https://github.com/ark-key/cypress-witch/blob/master/src/index.ts#L16)(s) and [expectedResult](https://github.com/ark-key/cypress-witch/blob/master/src/index.ts#L21)(s).
+
+testCase accepts 3 arguments:
+- title: string - test case title
+- body: () => void - test case body
+- hooks: () => void - *optional* - cypress [hooks](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Hooks) (before, beforeEach, after, afterEach)
+
+## Showcase wih [example.cypress.io/todo](https://example.cypress.io/todo)
 
 **_todo.spec.js_**
 
