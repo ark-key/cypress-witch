@@ -11,7 +11,7 @@
 
 ## Features
 
-- test structure becomes identical to test case definition
+- test structure becomes identical to test case specification
 - test structure becomes readable and understandable by anyone
 - enhanced logging makes failing tests review blazing fast 
 - can be easily integrated into existing workflow or code base
